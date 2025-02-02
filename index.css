@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: lime;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+
+.falling-text {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 24px;
+    opacity: 0;
+    width: 100%;
+}
+
+@keyframes fall {
+    0% { top: -100px; opacity: 0; }
+    50% { opacity: 1; }
+    100% { top: 150vh; opacity: 0; }
+}
